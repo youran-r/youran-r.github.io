@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>60W佳缘数据抓取-存储-展示 - Youran-r</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="悠然" />
+  <meta name="description" content="Introduction &amp;nbsp;&amp;nbsp;我们抓取了世纪佳缘近60W数据(仅个人学习使用)，一开始使用mongodb存储，由于机器配置问题，数据迁移到了my" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.33" />
+
+
+<link rel="canonical" href="http://youran-r.github.io/post/jiayuan_spider/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=2.7.2" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="60W佳缘数据抓取-存储-展示" />
+<meta property="og:description" content="Introduction &nbsp;&nbsp;我们抓取了世纪佳缘近60W数据(仅个人学习使用)，一开始使用mongodb存储，由于机器配置问题，数据迁移到了my" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://youran-r.github.io/post/jiayuan_spider/" />
+
+
+
+<meta property="article:published_time" content="2018-01-24T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-01-24T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="60W佳缘数据抓取-存储-展示">
+<meta itemprop="description" content="Introduction &nbsp;&nbsp;我们抓取了世纪佳缘近60W数据(仅个人学习使用)，一开始使用mongodb存储，由于机器配置问题，数据迁移到了my">
+
+
+<meta itemprop="datePublished" content="2018-01-24T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-01-24T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="926">
+
+
+
+<meta itemprop="keywords" content="抓取,Flask,mongodb," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="60W佳缘数据抓取-存储-展示"/>
+<meta name="twitter:description" content="Introduction &nbsp;&nbsp;我们抓取了世纪佳缘近60W数据(仅个人学习使用)，一开始使用mongodb存储，由于机器配置问题，数据迁移到了my"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Youran-r</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">列表</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Youran-r</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">列表</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">60W佳缘数据抓取-存储-展示</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-01-24 </span>
+        
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#python数据抓取">python数据抓取</a></li>
+<li><a href="#mongodb数据迁移至mysql">mongodb数据迁移至mysql</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h3 id="introduction">Introduction</h3>
+
+<p>&nbsp;&nbsp;我们抓取了世纪佳缘近60W数据(仅个人学习使用)，一开始使用mongodb存储，由于机器配置问题，数据迁移到了mysql；然后使用nginx+flask搭建服务器提供数据接口；前端使用小程序进行展示。</p>
+
+<p>&nbsp;&nbsp;下面逐一介绍下各环节实现。</p>
+
+<hr />
+
+<h3 id="python数据抓取">python数据抓取</h3>
+
+<p>&nbsp;&nbsp;分析佳缘网站，可以通过一个接口+各种筛选参数获取用户数据，但是翻页到几十页后会很大概率出现重复数据，也就是同一筛选条件不会抓全，所以使用各种筛选参数的组合，抓取尽可能多的数据。另外需要登录下，才能获取接口数据，使用python session模拟登陆。</p>
+
+<p>&nbsp;&nbsp;前期使用mongodb直接存储接口json数据，无需格式化处理。</p>
+
+<p>&nbsp;&nbsp;通过一段时间的抓取，累计了近60W用户数据。</p>
+
+<p>&nbsp;&nbsp;部分代码如下：</p>
+
+<pre><code>def search_con():
+    #con函数返回各种筛选参数组合数组
+    arr_con = con()
+    for each in arr_con:
+        for page in xrange(1, 100):
+            data = {
+                'p': page,
+                'sex': 'f',
+                'stc': each,
+            }
+            print 'current_page:{}'.format(page)
+            response = session.post('接口api',
+                                    headers=SEARCH_HEADERS, data=urlencode(data))
+            if not response.ok:
+                print 'page:{} failed'.format(page)
+                continue
+
+            users = response.json()['userInfo']
+            if not users:
+                print 'get emtpy data'
+                break;
+            for user in users:
+                dt = mongo_collection.find_one({'uid': user['uid']})
+                if not dt:
+                    mongo_collection.insert(user)
+                else:
+                    print '{} had existed.'.format(user['uid'])
+</code></pre>
+
+<p>&nbsp;&nbsp;代码已托管到github：<a href="https://github.com/youran-r/jiayuan.git">https://github.com/youran-r/jiayuan.git</a></p>
+
+<pre><code>git clone https://github.com/youran-r/jiayuan.git
+</code></pre>
+
+<h3 id="mongodb数据迁移至mysql">mongodb数据迁移至mysql</h3>
+
+<p><img src="/media/posts/images/mongodb_mysql.png" alt="导入导出流程图" /></p>
+
+<ol>
+<li>将MongoDB里的数据导出到csv文件，mongo自带工具mongoexport</li>
+</ol>
+
+<pre><code>/your_mongodb_path/bin/mongoexport -h ip(192.168.0.102) -u 登录帐号 -p 库登录密码 -d 数据库名称 -c 数据库集合名 -f _id,字段1,字段2 --type=csv -o 保存路径(/tmp/records.csv)
+</code></pre>
+
+<ol>
+<li>将csv文件导入到MySQL数据库中，可以用MySQL的load命令。</li>
+</ol>
+
+<pre><code>load data local infile '/tmp/records.csv'  into table `records` character set utf8 fields terminated by ',' optionally enclosed by '&quot;' lines terminated by '\n'  ignore 1 lines;
+</code></pre>
+
+<pre><code>注意：mysql导入文件时，遇权限问题，登陆使用 mysql --local-infile -u user -ppasswd
+</code></pre>
+
+<p>&nbsp;&nbsp;通过这种方式导入，可能会遇到了字段乱序或者乱码的问题，最后通过程序逐行导入。</p>
+
+<pre><code>代码已同步到：https://github.com/youran-r/jiayuan.git
+</code></pre>
+
+<p>以上是对数据抓取过程的一个陈列总结，最开始为了方便直接存储在mongodb，但最后还是折腾到了mysql，大家最开始也可以抓取数据时直接写入mysql。</p>
+
+<p>下一章介绍<a href="https://youran-r.github.io/post/jiayuan_interface">nginx+flask搭建接口服务器</a>，提供佳缘数据接口.</p>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">悠然</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-01-24</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://youran-r.github.io/" target="_blank">See origin</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/%E6%8A%93%E5%8F%96/">抓取</a>
+          
+          <a href="/tags/flask/">Flask</a>
+          
+          <a href="/tags/mongodb/">mongodb</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/2018%E5%B9%B4%E5%BA%A6%E8%AE%A1%E5%88%92/">
+            <span class="next-text nav-default">2018年度计划</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  
+</div>
+
+<div class="copyright">
+  
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">youran-r.github.io</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.7.2"></script>
+
+
+
+
+</body>
+</html>
