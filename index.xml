@@ -22,6 +22,15 @@
     </item>
     
     <item>
+      <title>Nginx&#43;Flask搭建接口服务器</title>
+      <link>http://youran-r.github.io/post/jiayuan_server/</link>
+      <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://youran-r.github.io/post/jiayuan_server/</guid>
+      <description>Introduction &amp;nbsp;&amp;nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo</description>
+    </item>
+    
+    <item>
       <title>60W佳缘数据抓取-存储-展示</title>
       <link>http://youran-r.github.io/post/jiayuan_spider/</link>
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>

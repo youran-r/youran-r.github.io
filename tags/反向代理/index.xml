@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Flask on Youran-r</title>
-    <link>http://youran-r.github.io/tags/flask/</link>
-    <description>Recent content in Flask on Youran-r</description>
+    <title>反向代理 on Youran-r</title>
+    <link>http://youran-r.github.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/</link>
+    <description>Recent content in 反向代理 on Youran-r</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>youran-r.github.io</copyright>
     <lastBuildDate>Thu, 25 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://youran-r.github.io/tags/flask/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://youran-r.github.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,15 +19,6 @@
       
       <guid>http://youran-r.github.io/post/jiayuan_server/</guid>
       <description>Introduction &amp;nbsp;&amp;nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo</description>
-    </item>
-    
-    <item>
-      <title>60W佳缘数据抓取-存储-展示</title>
-      <link>http://youran-r.github.io/post/jiayuan_spider/</link>
-      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
-      
-      <guid>http://youran-r.github.io/post/jiayuan_spider/</guid>
-      <description>Introduction &amp;nbsp;&amp;nbsp;我们抓取了世纪佳缘近60W数据(仅个人学习使用)，一开始使用mongodb存储，由于机器配置问题，数据迁移到了my</description>
     </item>
     
   </channel>
