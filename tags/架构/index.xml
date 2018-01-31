@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>youran-r.github.io</copyright>
-    <lastBuildDate>Sun, 28 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://youran-r.github.io/tags/%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>书单之大型网站架构技术-思维导图(三)</title>
+      <link>http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E4%B8%89/</link>
+      <pubDate>Wed, 31 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E4%B8%89/</guid>
+      <description>Introduction &amp;nbsp;&amp;nbsp;软件架构除了关注系统功能需求外，还需要关注性能、可用性、伸缩性、扩展性和安全性这5个架构要素，架构设计过程中需要平</description>
+    </item>
     
     <item>
       <title>书单之大型网站架构技术-思维导图(二)</title>

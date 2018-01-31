@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>书单之大型网站架构技术-思维导图(三) - Youran-r</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="悠然" />
+  <meta name="description" content="Introduction &amp;nbsp;&amp;nbsp;软件架构除了关注系统功能需求外，还需要关注性能、可用性、伸缩性、扩展性和安全性这5个架构要素，架构设计过程中需要平" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.33" />
+
+
+<link rel="canonical" href="http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E4%B8%89/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=2.7.2" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="书单之大型网站架构技术-思维导图(三)" />
+<meta property="og:description" content="Introduction &nbsp;&nbsp;软件架构除了关注系统功能需求外，还需要关注性能、可用性、伸缩性、扩展性和安全性这5个架构要素，架构设计过程中需要平" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E4%B8%89/" />
+
+
+
+<meta property="article:published_time" content="2018-01-31T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-01-31T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="书单之大型网站架构技术-思维导图(三)">
+<meta itemprop="description" content="Introduction &nbsp;&nbsp;软件架构除了关注系统功能需求外，还需要关注性能、可用性、伸缩性、扩展性和安全性这5个架构要素，架构设计过程中需要平">
+
+
+<meta itemprop="datePublished" content="2018-01-31T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-01-31T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="838">
+
+
+
+<meta itemprop="keywords" content="思维导图,架构," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="书单之大型网站架构技术-思维导图(三)"/>
+<meta name="twitter:description" content="Introduction &nbsp;&nbsp;软件架构除了关注系统功能需求外，还需要关注性能、可用性、伸缩性、扩展性和安全性这5个架构要素，架构设计过程中需要平"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Youran-r</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">列表</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Youran-r</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">列表</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">书单之大型网站架构技术-思维导图(三)</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-01-31 </span>
+        
+        
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#第三章-大型网站核心架构要素">第三章 大型网站核心架构要素</a>
+<ul>
+<li><a href="#性能">性能</a></li>
+<li><a href="#可用性">可用性</a></li>
+<li><a href="#伸缩性">伸缩性</a></li>
+<li><a href="#扩展性">扩展性</a></li>
+<li><a href="#安全性">安全性</a></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h3 id="introduction">Introduction</h3>
+
+<p>&nbsp;&nbsp;软件架构除了关注系统功能需求外，还需要关注性能、可用性、伸缩性、扩展性和安全性这5个架构要素，架构设计过程中需要平衡这5个要素之间的关系以实现需要和架构目标，也可以通过考察这些架构要素来衡量一个软件架构设计的优劣，判断其是否满足期望。</p>
+
+<p><img src="/media/posts/images/概述-第三章-核心架构要素.png" alt="大型网站架构要素" /></p>
+
+<h3 id="第三章-大型网站核心架构要素">第三章 大型网站核心架构要素</h3>
+
+<ul>
+<li>性能</li>
+<li>可用性</li>
+<li>伸缩性</li>
+<li>扩展性</li>
+<li>安全性</li>
+</ul>
+
+<h4 id="性能">性能</h4>
+
+<p>&nbsp;&nbsp;是网站的一个重要目标，也是网站架构设计的一个重要方面；网站性能问题是网站架构升级优化的触发器。</p>
+
+<ul>
+<li>客户端：本地缓存(浏览器缓存)、传输数据压缩(页面压缩)、合理页面布局、减少Cookie传输等。</li>
+<li>CND，最短访问路径获取数据；反向代理服务器，缓存热点文件，加快请求响应速度，减轻应用服务器负载压力。</li>
+<li>应用服务器：本地缓存(redis)和分布式缓存，热点数据，减轻数据库负载压力。</li>
+<li>异步：请求进入消息队列等待后续处理，直接返回响应给用户。</li>
+<li>集群：多台应用服务器构成集群，提高整体处理能力，改善性能。</li>
+<li>代码：多线程、改善内存管理等优化性能。</li>
+<li>数据库：索引、缓存、SQL优化、NoSQL</li>
+</ul>
+
+<p>&nbsp;&nbsp;衡量网站性能：响应时间、TPS(QPS)、系统性能计数等</p>
+
+<hr />
+
+<h4 id="可用性">可用性</h4>
+
+<p>&nbsp;&nbsp;99.99%，高可用的主要手段是冗余。</p>
+
+<ul>
+<li>应用服务器：负载均衡组成集群，实现故障切换</li>
+<li>存储服务器：实时备份，故障时，数据访问转移</li>
+<li>部署控制：预发布验证、自动化测试、自动化发布、灰度发布等</li>
+</ul>
+
+<hr />
+
+<h4 id="伸缩性">伸缩性</h4>
+
+<p>&nbsp;&nbsp;衡量架构伸缩性的主要标准：是否可以用多台服务器构建集群，是否容易向集群中添加新的服务器。</p>
+
+<ul>
+<li>应用服务器：负载均衡</li>
+<li>缓存服务器：注意：加入新的服务器会导致缓存路由失效，进而导致大部分缓存数据无法访问，改进缓存路由算法。</li>
+<li>关系数据库：数据复制、主从热备，但大规模集群的可伸缩性较困难；可通过路由分区等手段将部署有多个数据库的服务器组成一个进群。</li>
+<li>NoSQL：先天支持优势</li>
+</ul>
+
+<hr />
+
+<h4 id="扩展性">扩展性</h4>
+
+<p>&nbsp;&nbsp;网站快速发展，功能不断扩展，如何设计网站的架构使其能够快速响应需要变化，是网站可扩展架构主要的目的。</p>
+
+<ul>
+<li>事件驱动架构：消息队列</li>
+<li>分布式服务：业务和可服用服务分离，通过分布式服务框架调用。</li>
+</ul>
+
+<h4 id="安全性">安全性</h4>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">悠然</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-01-31</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://youran-r.github.io/" target="_blank">See origin</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+          
+          <a href="/tags/%E6%9E%B6%E6%9E%84/">架构</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E4%BA%8C/">
+            <span class="next-text nav-default">书单之大型网站架构技术-思维导图(二)</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  
+</div>
+
+<div class="copyright">
+  
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">youran-r.github.io</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.7.2"></script>
+
+
+
+
+</body>
+</html>
