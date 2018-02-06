@@ -7,10 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>youran-r.github.io</copyright>
-    <lastBuildDate>Wed, 31 Jan 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 04 Feb 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://youran-r.github.io/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>书单之大型网站架构技术-思维导图(四)</title>
+      <link>http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E5%9B%9B/</link>
+      <pubDate>Sun, 04 Feb 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E5%9B%9B/</guid>
+      <description>Introduct &amp;nbsp;&amp;nbsp;此部分开始介绍第二篇-架构，分别对性能、可用性、伸缩性、可用性、安全性五个方面进行了详细的介绍，比如如何进行评估、</description>
+    </item>
     
     <item>
       <title>书单之大型网站架构技术-思维导图(三)</title>
@@ -31,7 +40,7 @@
     </item>
     
     <item>
-      <title>书单之大型网站架构技术-思维导图(-)</title>
+      <title>书单之大型网站架构技术-思维导图(一)</title>
       <link>http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84/</link>
       <pubDate>Sat, 27 Jan 2018 00:00:00 +0000</pubDate>
       
