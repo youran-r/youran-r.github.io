@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>书单之大型网站架构技术-思维导图(五) - Youran-r</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="悠然" />
+  <meta name="description" content="Introduct &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;网站的可用性(Availability)描述网站可有效访问的特性。 &amp;nbsp;&amp;nbsp;" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.33" />
+
+
+<link rel="canonical" href="http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E4%BA%94/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" href="/favicon.ico" />
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+<link href="/dist/even.min.css?v=2.7.2" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+<meta property="og:title" content="书单之大型网站架构技术-思维导图(五)" />
+<meta property="og:description" content="Introduct &nbsp;&nbsp;&nbsp;&nbsp;网站的可用性(Availability)描述网站可有效访问的特性。 &nbsp;&nbsp;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E4%BA%94/" />
+
+
+
+<meta property="article:published_time" content="2018-02-28T00:00:00&#43;00:00"/>
+
+<meta property="article:modified_time" content="2018-02-28T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="书单之大型网站架构技术-思维导图(五)">
+<meta itemprop="description" content="Introduct &nbsp;&nbsp;&nbsp;&nbsp;网站的可用性(Availability)描述网站可有效访问的特性。 &nbsp;&nbsp;">
+
+
+<meta itemprop="datePublished" content="2018-02-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2018-02-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1772">
+
+
+
+<meta itemprop="keywords" content="思维导图,架构," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="书单之大型网站架构技术-思维导图(五)"/>
+<meta name="twitter:description" content="Introduct &nbsp;&nbsp;&nbsp;&nbsp;网站的可用性(Availability)描述网站可有效访问的特性。 &nbsp;&nbsp;"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Youran-r</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">列表</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Youran-r</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">列表</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">书单之大型网站架构技术-思维导图(五)</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-02-28 </span>
+        
+        
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#introduct">Introduct</a>
+<ul>
+<li><a href="#网站可用性的度量和考核">网站可用性的度量和考核</a></li>
+<li><a href="#高可用的网站架构">高可用的网站架构</a></li>
+<li><a href="#高可用的应用">高可用的应用</a></li>
+<li><a href="#高可用服务">高可用服务</a></li>
+<li><a href="#高可用的数据">高可用的数据</a></li>
+<li><a href="#高可用网站的软件质量保证">高可用网站的软件质量保证</a></li>
+<li><a href="#网站运行监控">网站运行监控</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<h2 id="introduct">Introduct</h2>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;网站的可用性(Availability)描述网站可有效访问的特性。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;DNS被劫持、CDN服务肯能挂掉、网站服务器宕机、网络交换机失效、硬盘损坏、网卡损坏、网卡松掉、机房停电、空调失灵、程序bug、黑客攻击、促销引来大量访问、第三方服务不可用&hellip; &hellip;要保证一个网站永远完全可用几乎是一件不可能完成的使命。</p>
+
+<p><img src="/media/posts/images/架构-第四章-高性能架构.png" alt="image" /></p>
+
+<h3 id="网站可用性的度量和考核">网站可用性的度量和考核</h3>
+
+<ul>
+<li>网站可用性度量</li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;网站不可用也被称为网站故障，通常用几个9来衡量网站的可用性。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;网站不可用时间(故障时间) = 故障修复时间点-故障发现(报告时间点)</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;网站年度可用性指标 = (1-网站不可用时间/年度总时间) * 100%</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;对于大多数网站，2个9是基本可用，3个9是较高可用，4个9是就有自动恢复能力的高可用，5个9是极高可用。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;Twitter网站的可用性不足2个9.</p>
+
+<ul>
+<li>网站可用性考核</li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;可用性指标是网站架构设计的重要指标，对外是服务承诺，对内是考核指标。从管理层面，可用性指标是网站或者产品的整体考核指标，具体到每个工程师的考核，更多的是使用故障分。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;所谓故障分是指对网站故障进行分类加权计算故障责任的方法。</p>
+
+<table>
+<thead>
+<tr>
+<th>分类</th>
+<th>描述</th>
+<th>权重</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>事故级故障</td>
+<td>严重故障，网站整体不可用</td>
+<td>100</td>
+</tr>
+
+<tr>
+<td>A类故障</td>
+<td>网站访问不顺畅或核心功能不可用</td>
+<td>20</td>
+</tr>
+
+<tr>
+<td>B类故障</td>
+<td>非核心功能不可用，或核心功能少数用户不可用</td>
+<td>5</td>
+</tr>
+
+<tr>
+<td>C类故障</td>
+<td>以上故障以为的其他故障</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;故障分的计算公式为：故障分 = 故障时间（分钟） * 故障权重</p>
+
+<h3 id="高可用的网站架构">高可用的网站架构</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;网站的高可用架构设计的主要目的就是保证服务器硬件故障时服务依然可用、数据依然保存并能够被访问。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;实现高可用架构的主要手段就是数据和服务的冗余备份及失效转移，一旦某些服务器宕机，就将服务切换到其他可用的服务器上，如果磁盘损坏，则从备份的磁盘读取数据。</p>
+
+<p><img src="/media/posts/images/网站三层架构.png" alt="网站三层架构" /></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;在复杂的大型网站架构中，划分的粒度会更小、更细，架构更加复杂，服务器规模更加庞大，但通常还是能够把这些服务划分到这三层中。</p>
+
+<h3 id="高可用的应用">高可用的应用</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;无状态应用是指应用服务器不保存业务的上下文信息，而根据每次请求提交的数据进行相应的业务逻辑处理，多个服务实例（服务器）之间完全对等，请求提交到任意服务器，处理结果都是完全一样的。</p>
+
+<ul>
+<li>通过负载均衡进行无状态服务的失效转移</li>
+<li>应用服务器集群的Session管理
+
+<ol>
+<li>Session复制</li>
+<li>Session绑定：hash，同一用户请求都在同一台服务器</li>
+<li>利用Cookie记录Session</li>
+<li>Session服务器：独立部署Session服务器同一管理</li>
+</ol></li>
+</ul>
+
+<h3 id="高可用服务">高可用服务</h3>
+
+<ol>
+<li>分级管理：核心服务与其他服务分级管理</li>
+<li>超时设置：宕机、死锁导致请求失去响应</li>
+<li>异步调用：如消息队列</li>
+<li>服务降级：拒绝及关闭服务</li>
+<li>幂等性设计：在服务层保证服务重复调用和调用一次产生的结果相同，即服务具有幂等性</li>
+</ol>
+
+<h3 id="高可用的数据">高可用的数据</h3>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;保证数据存储高可用的手段主要是数据备份和失效转移机制。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;高可用的数据含义：
+ 数据持久性、数据可访问性、数据一致性</p>
+
+<ul>
+<li>CAP原理</li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;CAP原理认为，一个提供数据服务的存储系统无法同事满足数据一致性（Consistency）、数据可用性（Availibility）、分区耐受性（Partition Tolerance，系统具有跨网络分区的伸缩性）三个条件。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;为保证数据的高可用，通常会牺牲：数据一致性。</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;数据一致性分为：
+数据强一致、数据用户一致、数据最终一致</p>
+
+<ul>
+<li>数据备份</li>
+<li>失效转移
+
+<ol>
+<li>失效确认</li>
+<li>访问转移</li>
+<li>数据恢复</li>
+</ol></li>
+</ul>
+
+<h3 id="高可用网站的软件质量保证">高可用网站的软件质量保证</h3>
+
+<ol>
+<li>网站发布</li>
+<li>自动化测试</li>
+<li>预发布验证</li>
+<li>代码控制</li>
+<li>自动化发布</li>
+<li>灰度发布</li>
+</ol>
+
+<h3 id="网站运行监控">网站运行监控</h3>
+
+<ul>
+<li>监控数据采集
+
+<ol>
+<li>用户行为日志收集
+
+<ol>
+<li>服务端日志收集</li>
+<li>客户端浏览器日志收集</li>
+</ol></li>
+<li>服务器性能监控</li>
+<li>运行数据报告</li>
+</ol></li>
+<li>监控管理
+
+<ol>
+<li>监控报警</li>
+<li>失效转移</li>
+<li>自动优雅降级
+<br /></li>
+</ol></li>
+</ul>
+
+    </div>
+
+    
+    
+<div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">悠然</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-02-28</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://youran-r.github.io/" target="_blank">See origin</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">思维导图</a>
+          
+          <a href="/tags/%E6%9E%B6%E6%9E%84/">架构</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E5%9B%9B/">
+            <span class="next-text nav-default">书单之大型网站架构技术-思维导图(四)</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+  
+</div>
+
+<div class="copyright">
+  
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">youran-r.github.io</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
+<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=2.7.2"></script>
+
+
+
+
+</body>
+</html>
