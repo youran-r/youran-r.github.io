@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>分布式 on Youran-r</title>
+    <link>http://youran-r.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/</link>
+    <description>Recent content in 分布式 on Youran-r</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 23 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://youran-r.github.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>拆书-人人架构师-分布式服务</title>
+      <link>http://youran-r.github.io/post/%E4%BA%BA%E4%BA%BA%E6%9E%B6%E6%9E%84%E5%B8%88-%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%8D%E5%8A%A1/</link>
+      <pubDate>Sat, 23 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://youran-r.github.io/post/%E4%BA%BA%E4%BA%BA%E6%9E%B6%E6%9E%84%E5%B8%88-%E5%88%86%E5%B8%83%E5%BC%8F%E6%9C%8D%E5%8A%A1/</guid>
+      <description>Introduct &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;本章讲解了互联网场景下大型网站架构的演变过程、服务化的一些必备知识，以及如何使用流行的RP</description>
+    </item>
+    
+  </channel>
+</rss>

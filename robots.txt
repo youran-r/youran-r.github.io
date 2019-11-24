@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://youran-r.github.io/sitemap.xml
+Sitemap: http://youran-r.github.io/sitemap.xml

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>Nginx&#43;Flask搭建接口服务器 - Youran-r</title>
+  <title>nginx&#43;flask搭建接口服务器 - Youran-r</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -16,69 +16,47 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
 
 
-<meta name="author" content="悠然" />
-  <meta name="description" content="Introduction &amp;nbsp;&amp;nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo" />
+<meta name="author" content="悠然" /><meta name="description" content="Introduction &amp;nbsp;&amp;nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo" /><meta name="keywords" content="Hugo, theme, even" />
 
 
 
 
 
 
-
-<meta name="generator" content="Hugo 0.33" />
+<meta name="generator" content="Hugo 0.59.1 with theme even" />
 
 
 <link rel="canonical" href="http://youran-r.github.io/post/jiayuan_server/" />
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" href="/favicon.ico" />
-<link rel="manifest" href="/manifest.json">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="apple-touch-icon" sizes="180x180" href="http://youran-r.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://youran-r.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="http://youran-r.github.io/favicon-16x16.png">
+<link rel="manifest" href="http://youran-r.github.io/manifest.json">
+<link rel="mask-icon" href="http://youran-r.github.io/safari-pinned-tab.svg" color="#5bbad5">
 
 
+<link href="http://youran-r.github.io/dist/even.c2a46f00.min.css" rel="stylesheet">
 
 
-<script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
-
-<link href="/dist/even.min.css?v=2.7.2" rel="stylesheet">
-<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
-
-<meta property="og:title" content="Nginx&#43;Flask搭建接口服务器" />
+<meta property="og:title" content="nginx&#43;flask搭建接口服务器" />
 <meta property="og:description" content="Introduction &nbsp;&nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://youran-r.github.io/post/jiayuan_server/" />
-
-
-
-<meta property="article:published_time" content="2018-01-25T00:00:00&#43;00:00"/>
-
-<meta property="article:modified_time" content="2018-01-25T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
-
-
-
-<meta itemprop="name" content="Nginx&#43;Flask搭建接口服务器">
+<meta property="article:published_time" content="2018-01-25T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-01-25T00:00:00+00:00" />
+<meta itemprop="name" content="nginx&#43;flask搭建接口服务器">
 <meta itemprop="description" content="Introduction &nbsp;&nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo">
 
 
 <meta itemprop="datePublished" content="2018-01-25T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2018-01-25T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1011">
+<meta itemprop="wordCount" content="1068">
 
 
 
 <meta itemprop="keywords" content="Flask,反向代理," />
-<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Nginx&#43;Flask搭建接口服务器"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="nginx&#43;flask搭建接口服务器"/>
 <meta name="twitter:description" content="Introduction &nbsp;&nbsp;Flask提供web应用框架，实现数据接口；Nginx实现反向代理功能，对外提供访问服务。 Flask安装及demo"/>
 
 <!--[if lte IE 9]>
@@ -94,7 +72,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/" class="logo">Youran-r</a>
+    <a href="http://youran-r.github.io/" class="logo">Even</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -104,15 +82,15 @@
 </div>
 <nav id="mobile-menu" class="mobile-menu slideout-menu">
   <ul class="mobile-menu-list">
-    <a href="/">
+    <a href="http://youran-r.github.io/">
         <li class="mobile-menu-item">首页</li>
-      </a><a href="/post/">
+      </a><a href="https://github.com/youran-r/post">
         <li class="mobile-menu-item">列表</li>
-      </a><a href="/tags/">
-        <li class="mobile-menu-item">标签</li>
-      </a><a href="/categories/">
+      </a><a href="http://youran-r.github.io/categories/">
         <li class="mobile-menu-item">分类</li>
-      </a><a href="/about/">
+      </a><a href="http://youran-r.github.io/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="http://youran-r.github.io/about/">
         <li class="mobile-menu-item">About</li>
       </a>
   </ul>
@@ -120,21 +98,21 @@
   <div class="container" id="mobile-panel">
     <header id="header" class="header">
         <div class="logo-wrapper">
-  <a href="/" class="logo">Youran-r</a>
+  <a href="http://youran-r.github.io/" class="logo">Even</a>
 </div>
 
 <nav class="site-navbar">
   <ul id="menu" class="menu">
     <li class="menu-item">
-        <a class="menu-item-link" href="/">首页</a>
+        <a class="menu-item-link" href="http://youran-r.github.io/">首页</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/post/">列表</a>
+        <a class="menu-item-link" href="https://github.com/youran-r/post">列表</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/tags/">标签</a>
+        <a class="menu-item-link" href="http://youran-r.github.io/categories/">分类</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/categories/">分类</a>
+        <a class="menu-item-link" href="http://youran-r.github.io/tags/">标签</a>
       </li><li class="menu-item">
-        <a class="menu-item-link" href="/about/">About</a>
+        <a class="menu-item-link" href="http://youran-r.github.io/about/">About</a>
       </li>
   </ul>
 </nav>
@@ -146,37 +124,14 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">Nginx&#43;Flask搭建接口服务器</h1>
+      <h1 class="post-title">nginx&#43;flask搭建接口服务器</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2018-01-25 </span>
         
         
-        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
       </div>
     </header>
-
-    
-    
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  
-  <div class="post-toc-content always-active">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#introduction">Introduction</a></li>
-<li><a href="#flask安装及demo实现">Flask安装及demo实现</a></li>
-<li><a href="#nginx反向代理">nginx反向代理</a></li>
-</ul></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-</div>
 
     
     <div class="post-content">
@@ -196,48 +151,76 @@
 <h3 id="flask安装及demo实现">Flask安装及demo实现</h3>
 
 <ul>
-<li>安装virtaulenv</li>
+<li><p>安装virtaulenv</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">sudo pip install virtualenv</pre></td></tr></table>
+</div>
+</div></li>
 </ul>
-
-<pre><code>sudo pip install virtualenv
-</code></pre>
 
 <p>&nbsp;&nbsp;why使用env虚拟环境：（为每个项目提供独立的环境，避免不同版本的python兼容问题）<a href="http://docs.jinkan.org/docs/flask/installation.html#installation">说明文档</a></p>
 
 <ul>
-<li>启动env环境</li>
-</ul>
+<li><p>启动env环境</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">进入env安装目录：cd env/bin
+启动：. activate</pre></td></tr></table>
+</div>
+</div></li>
 
-<pre><code>进入env安装目录：cd env/bin
-启动：. activate
-</code></pre>
+<li><p>安装Flask</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">pip install Flask</pre></td></tr></table>
+</div>
+</div></li>
 
-<ul>
-<li>安装Flask</li>
-</ul>
-
-<pre><code>pip install Flask
-</code></pre>
-
-<ul>
-<li>demo及运行</li>
-</ul>
-
-<pre><code>from flask import Flask
+<li><p>demo及运行</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">from flask import Flask
 app=Flask(__name__)
 
-@app.route('/hello')
+@app.route(&#39;/hello&#39;)
 def hello_world():
-    return &quot;Hello World&quot;
-if __name__=='__main__':
-    app.run()
-</code></pre>
+return &#34;Hello World&#34;
+if __name__==&#39;__main__&#39;:
+app.run()</pre></td></tr></table>
+</div>
+</div></li>
+</ul>
 
 <p>保存后，执行：</p>
-
-<pre><code>python helloworld.py
-</code></pre>
-
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">python helloworld.py</pre></td></tr></table>
+</div>
+</div>
 <p>此时不要关闭终端，打开浏览器输入：<a href="http://localhost:5000/hello">http://localhost:5000/hello</a></p>
 
 <p>flask环境搭建完成。</p>
@@ -273,119 +256,140 @@ if __name__=='__main__':
 
 <p>互联网上有许多开发的代理服务器，客户机在访问受限时，可通过不受限的代理服务器访问目标站点，通俗说，我们使用的翻墙浏览器就是利用了代理服务器，虽然不能出国，但也可直接访问外网。</p></li>
 
-<li><p>安装</p></li>
-</ul>
-
-<pre><code>tar -zxvf nginx-1.6.3.tar.gz
+<li><p>安装</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">tar -zxvf nginx-1.6.3.tar.gz
 cd nginx-1.6.3
 #安装路径和安装模块自行设置
 #最简化 ./configure
 ./configure --prefix=/home/work/install/nginx --with-http_ssl_module --with-pcre --with-http_realip_module --with-http_stub_status_module --without-http_userid_module --http-log-path=/home/work/logs/nginx/access_log --error-log-path=/home/work/logs/nginx/error_log --pid-path=/home/work/install/nginx/var/nginx.pid
 
 make
-make install
+make install</pre></td></tr></table>
+</div>
+</div></li>
 
-</code></pre>
-
-<ul>
-<li>反向代理配置：</li>
-</ul>
-
-<pre><code>server {
-    listen      8080;
-    #设置域名访问
-    #server_name test.flask.com;
-    #nginx访问日志,路径自行设置
-    access_log  /home/work/logs/nginx/access_mlang_log  main;
-    location / {
-        try_files $uri @mlang;
-    }
-    location @mlang {
-        internal;
-        proxy_pass http://x.x.x.x:5000;
-        proxy_connect_timeout 30s;
-        proxy_send_timeout 120;
-        proxy_read_timeout 120;
-        proxy_buffer_size 32k;
-        proxy_buffers 4 32k;
-        proxy_busy_buffers_size 64k;
-        proxy_redirect off;
-        proxy_hide_header Vary;
-        proxy_set_header Accept-Encoding '';
-        proxy_set_header Host $host;
-        proxy_set_header Referer $http_referer;
-        proxy_set_header Cookie $http_cookie;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    }
+<li><p>反向代理配置：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">server {
+listen      8080;
+#设置域名访问
+#server_name test.flask.com;
+#nginx访问日志,路径自行设置
+access_log  /home/work/logs/nginx/access_mlang_log  main;
+location / {
+    try_files $uri @mlang;
+}
+location @mlang {
+    internal;
+    proxy_pass http://x.x.x.x:5000;
+    proxy_connect_timeout 30s;
+    proxy_send_timeout 120;
+    proxy_read_timeout 120;
+    proxy_buffer_size 32k;
+    proxy_buffers 4 32k;
+    proxy_busy_buffers_size 64k;
+    proxy_redirect off;
+    proxy_hide_header Vary;
+    proxy_set_header Accept-Encoding &#39;&#39;;
+    proxy_set_header Host $host;
+    proxy_set_header Referer $http_referer;
+    proxy_set_header Cookie $http_cookie;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+}
 }
 
-#注意：http://x.x.x.x:5000 替换为flask的访问地址
+#注意：http://x.x.x.x:5000 替换为flask的访问地址</pre></td></tr></table>
+</div>
+</div></li>
 
-</code></pre>
+<li><p>启动nginx</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">cd nginx/sbin
+./nginx</pre></td></tr></table>
+</div>
+</div></li>
 
-<ul>
-<li>启动nginx</li>
+<li><p>访问</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><span class="lnt">1
+</span><span class="lnt">2
+</span></pre></td>
+<td class="lntd">
+<pre class="chroma">#比如：nginx服务器地址未1.2.3.4
+浏览器访问：http://1.2.3.4:8080</pre></td></tr></table>
+</div>
+</div></li>
 </ul>
-
-<pre><code>cd nginx/sbin
-./nginx
-
-</code></pre>
-
-<ul>
-<li>访问</li>
-</ul>
-
-<pre><code>#比如：nginx服务器地址未1.2.3.4
-浏览器访问：http://1.2.3.4:8080
-
-</code></pre>
 
     </div>
 
     
-    
-<div class="post-copyright">
-  <p class="copyright-item">
-    <span class="item-title">文章作者</span>
-    <span class="item-content">悠然</span>
-  </p>
-  <p class="copyright-item">
-    <span class="item-title">上次更新</span>
-    <span class="item-content">2018-01-25</span>
-  </p>
-  
-  <p class="copyright-item">
-    <span class="item-title">许可协议</span>
-    <span class="item-content"><a rel="license noopener" href="https://youran-r.github.io/" target="_blank">See origin</a></span>
-  </p>
-</div>
-
-    
-    
-
-    <footer class="post-footer">
+<footer class="post-footer">
       <div class="post-tags">
-          
-          <a href="/tags/flask/">Flask</a>
-          
-          <a href="/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">反向代理</a>
-          
-        </div>
-
-      
+          <a href="http://youran-r.github.io/tags/flask/">Flask</a>
+          <a href="http://youran-r.github.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/">反向代理</a>
+          </div>
       <nav class="post-nav">
-        
-          <a class="prev" href="/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84/">
+        <a class="prev" href="http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84%E4%BA%8C/">
             <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">书单之大型网站架构技术-思维导图(一)</span>
-            <span class="prev-text nav-mobile">上一篇</span>
+            <span class="prev-text nav-default">书单之大型网站架构技术-思维导图(二)</span>
+            <span class="prev-text nav-mobile">Prev</span>
           </a>
-        
-          <a class="next" href="/post/jiayuan_spider/">
-            <span class="next-text nav-default">60W佳缘数据抓取-存储-展示</span>
-            <span class="prev-text nav-mobile">下一篇</span>
+        <a class="next" href="http://youran-r.github.io/post/%E5%A4%A7%E5%9E%8B%E7%BD%91%E7%AB%99%E6%9E%B6%E6%9E%84/">
+            <span class="next-text nav-default">书单之大型网站架构技术-思维导图(-)</span>
+            <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
       </nav>
@@ -393,46 +397,55 @@ make install
   </article>
         </div>
         
-  
 
   
 
   
+
       </div>
     </main>
 
     <footer id="footer" class="footer">
       <div class="social-links">
-  
+  <a href="http://youran-r.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
 </div>
 
 <div class="copyright">
-  
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
 
   
 
   <span class="copyright-year">
     &copy; 
-    2018
+    2017 - 
+    2019
     <span class="heart">
       <i class="iconfont icon-heart"></i>
     </span>
-    <span class="author">youran-r.github.io</span>
+    <span class="author">Youran-r</span>
   </span>
 </div>
-
     </footer>
 
     <div class="back-to-top" id="back-to-top">
       <i class="iconfont icon-up"></i>
     </div>
   </div>
+  <script type="text/javascript" src="http://youran-r.github.io/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="http://youran-r.github.io/lib/slideout/slideout-1.0.1.min.js"></script>
   
-<script src="/lib/highlight/highlight.pack.js?v=20171001"></script>
-<script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
-  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
-<script type="text/javascript" src="/dist/even.min.js?v=2.7.2"></script>
+<script type="text/javascript" src="http://youran-r.github.io/dist/even.26188efa.min.js"></script>
+
+
+
+
 
 
 

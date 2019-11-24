@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>反向代理 on Youran-r</title>
@@ -6,14 +6,13 @@
     <description>Recent content in 反向代理 on Youran-r</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <copyright>youran-r.github.io</copyright>
     <lastBuildDate>Thu, 25 Jan 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://youran-r.github.io/tags/%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Nginx&#43;Flask搭建接口服务器</title>
+      <title>nginx&#43;flask搭建接口服务器</title>
       <link>http://youran-r.github.io/post/jiayuan_server/</link>
       <pubDate>Thu, 25 Jan 2018 00:00:00 +0000</pubDate>
       
