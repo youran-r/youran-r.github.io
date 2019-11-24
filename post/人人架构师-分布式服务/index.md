@@ -8,7 +8,7 @@
 - 第一阶段
 
 &nbsp;&nbsp;对于访问规模相对较小的情况下（目前没有具体量化数据），演化过程如下
-![69d563ea8dd073e3847266fd4ac05456.png](en-resource://database/1366:1)
+![/media/posts/images/第一章节-第一阶段.jpg](en-resource://database/1366:1)
 
 1. 网站初期，应用程序、数据库、文件等资源都部署在同一台服务器。此阶段一般为试行阶段，用户少，请求量小，可以节省资源。
 架构一般采用LNMP实现：Linux服务器操作系统，使用php开发，使用nginx作为web服务器，数据库采用mysql关系型数据库。
@@ -29,6 +29,6 @@
 - 第二阶段
 
 &nbsp;&nbsp;引入分布式和集群，会使得网站难度和复杂度提升很高，当网站规模、业务、存储达到一定程度后，演化过程如下：
-![7bebfd75e0c6e7de6c88105fe0ffbc82.png](en-resource://database/1368:0)
+![/media/posts/images/第一章节-第二阶段.jpg](en-resource://database/1368:0)
 
 
